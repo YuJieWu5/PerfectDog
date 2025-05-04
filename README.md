@@ -113,9 +113,3 @@ This project integrates with the Fetch dog adoption API, which provides endpoint
 - Dog matching algorithm
 
 All API calls include credentials to maintain the authentication session.
-
-## 📧 Contact
-
-Vivian Wu - [wuvivian725@gmail.com](mailto:wuvivian725@gmail.com)
-
-Project Link: [https://github.com/YuJieWu5/PerfectDog](https://github.com/YuJieWu5/PerfectDog)
