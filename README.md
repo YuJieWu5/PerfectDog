@@ -1,36 +1,121 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Perfect Dog - Find Your Furry Friend
 
-## Getting Started
+## 🐾 Live Demo
 
-First, run the development server:
+[Perfect Dog - Find Your Perfect Match](https://perfect-dog.vercel.app/)
 
+## 📝 Overview
+
+Perfect Dog is a web application designed to help dog lovers search through a database of shelter dogs and find their perfect match. This project was built for Fetch's frontend take-home challenge, leveraging their dog adoption API.
+
+## ✨ Features
+
+### User Authentication
+- Clean and intuitive login page
+- User authentication with name and email
+- Secure credential handling with HttpOnly cookies
+
+### Dog Search Page
+- **Advanced Filtering Options**:
+  - Filter by breed with multi-select dropdown
+  - Age range selection with interactive sliders
+  - Location-based filtering with zip code search
+  - Setup dog age limit
+
+### Search Results
+- Paginated results for better performance and user experience
+- Sortable results (alphabetically by breed, name, or age)
+- Toggle between ascending and descending sort order
+- Clear visual presentation of all dog attributes
+
+### Favorites System
+- Add dogs to favorites with a single click
+- Favorites persist between search sessions
+- Visual indicator of favorited dogs
+- Remove dogs from favorites
+- View all favorites in a dedicated section
+
+### Dog Matching
+- Generate a match based on favorited dogs
+- Celebratory match presentation
+- Option to start a new search after matching
+
+### Responsive UI
+- Mobile-friendly design
+- Adaptive layout for various screen sizes
+- Accessible to all users
+
+## 🛠️ Technology Stack
+
+- **Frontend Framework**: React with JavaScript
+- **State Management**: React Context API
+- **Styling**: Tailwind CSS, Styled Components
+- **API Communication**: Fetch API with credentials
+- **Deployment**: Vercel
+
+## 🚀 Installation and Setup
+
+### Prerequisites
+- Node.js (v14.x or higher)
+- npm
+
+### Local Development
+
+1. Clone the repository
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/your-username/perfect-dog.git
+cd perfect-dog
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+3. Start the development server
+```bash
+npm run build
+npm start
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
 
-## Learn More
+4. Open your browser and navigate to `http://localhost:3000`
 
-To learn more about Next.js, take a look at the following resources:
+## 📁 Project Structure
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+PerfectDog/
+├── public/                 # Static assets
+├── src/
+│   ├── app/
+│       ├── home/           # home page
+│       ├── favoriteList/   # favoriteList page
+│   ├── components/         # Reusable UI components
+│       ├── common/
+│       ├── dogs/
+│       ├── favorites/
+│       ├── filters/
+│   ├── constants/          # Constant values for searching field
+│   ├── hooks/              # Customerize hooks
+├── .gitignore
+├── package.json
+├── README.md
+└── tsconfig.json
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🔍 API Integration
 
-## Deploy on Vercel
+This project integrates with the Fetch dog adoption API, which provides endpoints for:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- User authentication
+- Dog breed listings
+- Dog searching with various filters
+- Dog matching algorithm
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+All API calls include credentials to maintain the authentication session.
+
+## 📧 Contact
+
+Vivian Wu - [wuvivian725@gmail.com](mailto:wuvivian725@gmail.com)
+
+Project Link: [https://github.com/YuJieWu5/PerfectDog](https://github.com/YuJieWu5/PerfectDog)
